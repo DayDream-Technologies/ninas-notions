@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Subscribe to Nina's Notions newsletter for crafting tips, exclusive offers, and class updates.">
+  <title>Newsletter - Nina's Notions</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Lato:wght@400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Skip Navigation -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container">
+      <a href="index.html" class="header__logo">
+        <span class="header__logo-text">Nina's Notions</span>
+      </a>
+
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="shop.html" class="nav__link">Shop</a>
+          </li>
+          <li class="nav__item">
+            <a href="gift-certificates.html" class="nav__link">Gift Certificates</a>
+          </li>
+          <li class="nav__item">
+            <a href="classes/index.html" class="nav__link nav__link--has-submenu">Classes</a>
+            <ul class="nav__submenu">
+              <li><a href="classes/index.html" class="nav__submenu-link">All Classes</a></li>
+              <li><a href="classes/calendar.html" class="nav__submenu-link">Calendar</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <div class="cart-icon"></div>
+        <button class="header__menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Newsletter Hero -->
+    <section class="newsletter-hero">
+      <div class="container">
+        <div class="newsletter-hero__content">
+          <h1 class="newsletter-hero__title">Stay Creative with Us!</h1>
+          <p class="newsletter-hero__subtitle">Subscribe to our newsletter for exclusive offers, crafting tips, new product alerts, and class updates delivered straight to your inbox.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Form -->
+    <section class="section">
+      <div class="container">
+        <div class="newsletter-form-wrapper">
+          <form class="newsletter-signup-form" data-form="newsletter">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name" class="form-label form-label--required">First Name</label>
+                <input type="text" id="first-name" name="first-name" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label for="last-name" class="form-label">Last Name</label>
+                <input type="text" id="last-name" name="last-name" class="form-input">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label form-label--required">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label for="email-confirm" class="form-label form-label--required">Confirm Email Address</label>
+              <input type="email" id="email-confirm" name="email-confirm" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">I'm interested in: (optional)</label>
+              <div class="checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="interests" value="scrapbooking">
+                  <span>Scrapbooking</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="interests" value="cardmaking">
+                  <span>Card Making</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="interests" value="diamond-art">
+                  <span>Diamond Art</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="interests" value="classes">
+                  <span>Classes & Workshops</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="interests" value="sales">
+                  <span>Sales & Promotions</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="interests" value="retreats">
+                  <span>Craft Retreats</span>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--large btn--full">Subscribe to Newsletter</button>
+            
+            <p class="form-disclaimer">By subscribing, you agree to receive marketing emails from Nina's Notions. You can unsubscribe at any time. We respect your privacy and will never share your information.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- What You'll Get -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">What You'll Receive</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </div>
+            <h3>Exclusive Offers</h3>
+            <p>Subscriber-only discounts and early access to sales events.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+            </div>
+            <h3>Crafting Tips</h3>
+            <p>Techniques, tutorials, and inspiration for your projects.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <h3>Class Updates</h3>
+            <p>Be the first to know about new workshops and registration openings.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <h3>New Products</h3>
+            <p>Get notified when exciting new supplies arrive in store.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Archive Preview -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Recent Newsletters</h2>
+        <div class="archive-grid">
+          <article class="archive-card">
+            <span class="archive-card__date">January 2026</span>
+            <h3 class="archive-card__title">New Year, New Crafts!</h3>
+            <p class="archive-card__excerpt">Start the year with fresh inspiration! Check out our new diamond art collection and upcoming class schedule.</p>
+          </article>
+          <article class="archive-card">
+            <span class="archive-card__date">December 2025</span>
+            <h3 class="archive-card__title">Holiday Crafting Guide</h3>
+            <p class="archive-card__excerpt">Last-minute gift ideas, handmade card tutorials, and our special holiday hours.</p>
+          </article>
+          <article class="archive-card">
+            <span class="archive-card__date">November 2025</span>
+            <h3 class="archive-card__title">Thankful for Our Crafters</h3>
+            <p class="archive-card__excerpt">Exclusive subscriber sale, fall project ideas, and a sneak peek at winter classes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__column">
+          <h3 class="footer__heading">Quick Links</h3>
+          <ul class="footer__links">
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="policies.html">Store Policies</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__heading">Hours</h3>
+          <ul class="footer__hours">
+            <li><strong>Wed - Fri:</strong> 12p-6p</li>
+            <li><strong>Sat:</strong> 10a-1p</li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__heading">Contact Info</h3>
+          <ul class="footer__contact">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <a href="tel:9892924101">(989) 292-4101</a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:info@ninasnotions.shop">info@ninasnotions.shop</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__heading">Follow Us</h3>
+          <div class="social-links footer__social">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Pinterest">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">Copyright &copy; 2007-2026 - Nina's Notions</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/forms.js"></script>
+
+  <!-- Page Styles -->
+  <style>
+    .newsletter-hero {
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+      color: white;
+      padding: var(--space-4xl) 0;
+      text-align: center;
+    }
+
+    .newsletter-hero__content {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .newsletter-hero__title {
+      color: white;
+      font-size: var(--text-4xl);
+      margin-bottom: var(--space-md);
+    }
+
+    .newsletter-hero__subtitle {
+      font-size: var(--text-lg);
+      opacity: 0.9;
+      margin: 0;
+    }
+
+    .newsletter-form-wrapper {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: var(--space-2xl);
+      border-radius: var(--border-radius-lg);
+      box-shadow: var(--shadow-lg);
+      margin-top: calc(var(--space-3xl) * -1);
+      position: relative;
+      z-index: 1;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-md);
+    }
+
+    .checkbox-group {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-sm);
+    }
+
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      cursor: pointer;
+      padding: var(--space-sm);
+      border-radius: var(--border-radius);
+      transition: background var(--transition-fast);
+    }
+
+    .checkbox-label:hover {
+      background: var(--color-cream);
+    }
+
+    .checkbox-label input {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--color-primary);
+    }
+
+    .form-disclaimer {
+      font-size: var(--text-xs);
+      color: var(--color-medium-gray);
+      text-align: center;
+      margin-top: var(--space-lg);
+      margin-bottom: 0;
+    }
+
+    /* Benefits */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-xl);
+    }
+
+    .benefit-card {
+      text-align: center;
+      padding: var(--space-lg);
+    }
+
+    .benefit-card__icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto var(--space-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-primary-light);
+      color: var(--color-primary-dark);
+      border-radius: 50%;
+    }
+
+    .benefit-card h3 {
+      font-size: var(--text-lg);
+      margin-bottom: var(--space-sm);
+    }
+
+    .benefit-card p {
+      color: var(--color-dark-gray);
+      font-size: var(--text-sm);
+      margin: 0;
+    }
+
+    /* Archive */
+    .archive-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-xl);
+    }
+
+    .archive-card {
+      background: var(--color-cream);
+      padding: var(--space-lg);
+      border-radius: var(--border-radius-lg);
+      border-left: 4px solid var(--color-primary);
+    }
+
+    .archive-card__date {
+      font-size: var(--text-sm);
+      color: var(--color-primary);
+      font-weight: 600;
+    }
+
+    .archive-card__title {
+      font-size: var(--text-lg);
+      margin: var(--space-sm) 0;
+    }
+
+    .archive-card__excerpt {
+      color: var(--color-dark-gray);
+      font-size: var(--text-sm);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--color-charcoal);
+      color: var(--color-cream);
+      padding: var(--space-3xl) 0 var(--space-xl);
+    }
+
+    .footer__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-2xl);
+      margin-bottom: var(--space-2xl);
+    }
+
+    .footer__heading {
+      color: white;
+      font-size: var(--text-lg);
+      margin-bottom: var(--space-lg);
+      position: relative;
+      padding-bottom: var(--space-sm);
+    }
+
+    .footer__heading::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40px;
+      height: 2px;
+      background: var(--color-primary);
+    }
+
+    .footer__links li,
+    .footer__hours li,
+    .footer__contact li {
+      margin-bottom: var(--space-sm);
+    }
+
+    .footer__links a,
+    .footer__contact a {
+      color: var(--color-cream);
+      opacity: 0.8;
+      transition: opacity var(--transition-fast);
+    }
+
+    .footer__links a:hover,
+    .footer__contact a:hover {
+      opacity: 1;
+      color: var(--color-primary-light);
+    }
+
+    .footer__contact li {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-sm);
+    }
+
+    .footer__contact svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+      opacity: 0.7;
+    }
+
+    .footer__social {
+      justify-content: flex-start;
+    }
+
+    .footer__social .social-link {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .footer__social .social-link:hover {
+      background: var(--color-primary);
+    }
+
+    .footer__bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: var(--space-xl);
+      text-align: center;
+    }
+
+    .footer__copyright {
+      font-size: var(--text-sm);
+      opacity: 0.6;
+      margin: 0;
+    }
+
+    @media (max-width: 1024px) {
+      .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .archive-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer__grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .checkbox-group {
+        grid-template-columns: 1fr;
+      }
+
+      .benefits-grid {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+        margin: 0 auto;
+      }
+
+      .archive-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .newsletter-form-wrapper {
+        padding: var(--space-lg);
+        margin-left: var(--space-md);
+        margin-right: var(--space-md);
+      }
+
+      .footer__grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .footer__heading::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .footer__contact li {
+        justify-content: center;
+      }
+
+      .footer__social {
+        justify-content: center;
+      }
+    }
+  </style>
+</body>
+</html>
+
