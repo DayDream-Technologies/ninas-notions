@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Contact Nina's Notions - Your local craft and scrapbooking supply store in Saint Johns, MI.">
+  <link rel="canonical" href="https://www.ninasnotions.shop/contact">
   <title>Contact Us - Nina's Notions</title>
   
   <!-- Fonts -->
@@ -224,15 +225,27 @@
     <section class="section section--alt map-section">
       <div class="container">
         <h2 class="section__title">Find Us</h2>
-        <div class="map-placeholder">
-          <div class="map-placeholder__content">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-              <circle cx="12" cy="10" r="3"></circle>
-            </svg>
-            <p>104 N. Clinton Ave, Ste A<br>Saint Johns, MI 48879</p>
-            <a href="https://maps.google.com/?q=104+N+Clinton+Ave+Saint+Johns+MI+48879" target="_blank" rel="noopener" class="btn btn--primary">
-              Open in Google Maps
+        <div class="map-container">
+          <iframe 
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-84.56384658813478%2C42.99657668686695%2C-84.55384658813478%2C43.00157668686695&amp;layer=mapnik&amp;marker=42.999076%2C-84.558847"
+            width="100%" 
+            height="400" 
+            style="border: 0; border-radius: var(--border-radius-lg);" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Nina's Notions Location Map">
+          </iframe>
+          <div class="map-info">
+            <div class="map-info__address">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>104 N. Clinton Ave, Ste A, Saint Johns, MI 48879</span>
+            </div>
+            <a href="https://www.openstreetmap.org/?mlat=42.999076&amp;mlon=-84.558847#map=17/42.999076/-84.558847" target="_blank" rel="noopener" class="btn btn--secondary btn--small">
+              View Larger Map
             </a>
           </div>
         </div>
@@ -403,27 +416,48 @@
       font-style: italic;
     }
 
-    .map-placeholder {
-      background: linear-gradient(135deg, var(--color-light-gray) 0%, var(--color-cream) 100%);
+    .map-container {
+      background: white;
       border-radius: var(--border-radius-lg);
-      min-height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
     }
 
-    .map-placeholder__content {
-      text-align: center;
+    .map-container iframe {
+      display: block;
+    }
+
+    .map-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: var(--space-lg);
+      background: white;
+      border-top: 1px solid var(--color-light-gray);
+    }
+
+    .map-info__address {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
       color: var(--color-dark-gray);
     }
 
-    .map-placeholder__content svg {
-      margin-bottom: var(--space-md);
-      opacity: 0.5;
+    .map-info__address svg {
+      color: var(--color-primary);
+      flex-shrink: 0;
     }
 
-    .map-placeholder__content p {
-      margin-bottom: var(--space-lg);
+    @media (max-width: 600px) {
+      .map-info {
+        flex-direction: column;
+        gap: var(--space-md);
+        text-align: center;
+      }
+
+      .map-info__address {
+        flex-direction: column;
+      }
     }
 
     /* Footer */
